@@ -8,6 +8,7 @@ import { useInView } from "react-intersection-observer";
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 const boxVariant = {
     visible: {
@@ -91,11 +92,13 @@ const ContactUs = () => {
                     initial="hidden"
                     animate={control2}
                 >
-                    123 Anywhere St. Any City, ST 12345
+                    14, Ekambaram Street, Chitlapakkam, Chennai 600064.
                     <br />
-                    123-456-7890
+                    <br />
+                    <br />
+                    <PhoneIcon /> 72992 60600
                 </motion.div>
-                <motion.div
+                {/* <motion.div
                     className={styles.para}
                     ref={ref3}
                     variants={boxVariant}
@@ -103,17 +106,14 @@ const ContactUs = () => {
                     animate={control3}
                     onClick={navigateToShop1}
                 >
-                    hello@reallygreatsite.com
-                </motion.div>
+                </motion.div> */}
                 <motion.div
                     className={styles.ContactUsButton}
                     ref={ref4}
                     variants={boxVariant}
                     initial="hidden"
                     animate={control4}>
-                    <div className={styles.ContactUsButtonIcon}><FacebookRoundedIcon /></div>
-                    <div className={styles.ContactUsButtonIcon}><InstagramIcon /></div>
-                    <div className={styles.ContactUsButtonIcon}><TwitterIcon /></div>
+                    <div className={styles.ContactUsButtonIcon}><a href="https://www.instagram.com/drizzfit_mc/"><InstagramIcon /></a></div>
                 </motion.div>
             </div>
 
